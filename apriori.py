@@ -128,11 +128,12 @@ def runApriori(data_iter, minSupport, minConfidence):
 #         print "Rule: %s ==> %s , %.3f" % (str(pre), str(post), confidence)
 def printResults(items, rules):
     for item, support in sorted(items, key=operator.itemgetter(1)):
-        print("item: %s , %.3f" % (str(item), support))
-    print("\n------------------------ RULES:")
-    for rule, confidence in sorted(rules, key=operator.itemgetter(1)):
-        pre, post = rule
-        print("Rule: %s ==> %s , %.3f" % (str(pre), str(post), confidence))
+        if (len(item) == 3):
+            print("item: %s , %.3f" % (str(item), support))
+    #print("\n------------------------ RULES:")
+    #for rule, confidence in sorted(rules, key=operator.itemgetter(1)):
+     #   pre, post = rule
+      #  print("Rule: %s ==> %s , %.3f" % (str(pre), str(post), confidence))
 
 
 def dataFromFile(fname):
