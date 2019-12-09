@@ -1,68 +1,67 @@
 Drug and Alcohol
 -s 0.005 | 30,000
 ------------------------ ITEMS:
-item: ('cheesman-park', '20:00:00', 'Tuesday') , 0.005
-item: ('Friday', 'five-points', '23:59:00') , 0.005
-item: ('16:00:00', 'five-points', 'Tuesday') , 0.005
-item: ('cheesman-park', '20:00:00', 'Wednesday') , 0.006
-item: ('20:00:00', 'five-points', 'Saturday') , 0.006
+item: ('cheesman-park', 'Tuesday', '20:00:00') , 0.005
+item: ('five-points', 'Friday', '23:59:00') , 0.005
+item: ('five-points', 'Tuesday','16:00:00',) , 0.005
+item: ('cheesman-park', , 'Wednesday', '20:00:00') , 0.006
+item: ('five-points', 'Saturday', '20:00:00') , 0.006
 item: ('capitol-hill', 'Thursday', '20:00:00') , 0.006
-item: ('cheesman-park', '20:00:00', 'Monday') , 0.006
-item: ('20:00:00', 'Monday', 'five-points') , 0.006
+item: ('cheesman-park',  'Monday', '20:00:00') , 0.006
+item: ('five-points',  'Monday', '20:00:00' ) , 0.006
 item: ('capitol-hill', 'Wednesday', '20:00:00') , 0.006
-item: ('Friday', '20:00:00', 'five-points') , 0.007
-item: ('Thursday', '20:00:00', 'five-points') , 0.009
-item: ('20:00:00', 'five-points', 'Tuesday') , 0.009
-item: ('20:00:00', 'Wednesday', 'five-points') , 0.010
-
+item: ( 'five-points', 'Friday', '20:00:00') , 0.007
+item: ('five-points', 'Thursday', '20:00:00') , 0.009
+item: ('five-points', 'Tuesday', '20:00:00') , 0.009
+item: ('five-points', 'Wednesday', '20:00:00') , 0.010
 
 Other Crimes
 -s 0.002 | 40,000
 ------------------------ ITEMS:
-item: ('civic-center', '23:59:00', 'Thursday') , 0.002
-item: ('civic-center', '16:00:00', 'Thursday') , 0.002
-item: ('cbd', '20:00:00', 'Saturday') , 0.002
-item: ('20:00:00', 'Wednesday', 'east-colfax') , 0.002
+item: ('civic-center', 'Thursday', '23:59:00') , 0.002
+item: ('civic-center',  'Thursday', '16:00:00') , 0.002
+item: ('cbd', 'Saturday', '20:00:00') , 0.002
+item: ('east-colfax', 'Wednesday', '20:00:00') , 0.002
 item: ('westwood', 'Sunday', '23:59:00') , 0.002
-item: ('montbello', '23:59:00', 'Friday') , 0.002
-item: ('20:00:00', 'five-points', 'Friday') , 0.002
+item: ('montbello', 'Friday', '23:59:00') , 0.002
+item: ('five-points', 'Friday', '20:00:00') , 0.002
 item: ('westwood', 'Friday', '23:59:00') , 0.002
-item: ('23:59:00', 'five-points', 'Friday') , 0.002
-item: ('montbello', '16:00:00', 'Thursday') , 0.002
+item: ('five-points', 'Friday', '23:59:00') , 0.002
+item: ('montbello', 'Thursday', '16:00:00') , 0.002
 item: ('montbello', 'Friday', '16:00:00') , 0.002
 item: ('westwood', 'Saturday', '23:59:00') , 0.002
-item: ('westwood', '23:59:00', 'Thursday') , 0.002
-item: ('20:00:00', 'five-points', 'Saturday') , 0.002
-item: ('16:00:00', 'Monday', 'east-colfax') , 0.002
-item: ('montbello', '20:00:00', 'Tuesday') , 0.002
+item: ('westwood', 'Thursday', '23:59:00') , 0.002
+item: ('five-points', 'Saturday', '20:00:00') , 0.002
+item: ('east-colfax', 'Monday', '16:00:00') , 0.002
+item: ('montbello', 'Tuesday', '20:00:00') , 0.002
 item: ('montbello', 'Wednesday', '16:00:00') , 0.002
-item: ('23:59:00', 'civic-center', 'Wednesday') , 0.002
-item: ('16:00:00', 'civic-center', 'Wednesday') , 0.002
-item: ('cbd', '20:00:00', 'Thursday') , 0.002
-item: ('civic-center', '16:00:00', 'Tuesday') , 0.002
-item: ('08:00:00', 'civic-center', 'Monday') , 0.003
-item: ('16:00:00', 'civic-center', 'Friday') , 0.004
+item: ('civic-center', 'Wednesday', '23:59:00') , 0.002
+item: ('civic-center', 'Wednesday', '16:00:00') , 0.002
+item: ('cbd', 'Thursday', '20:00:00') , 0.002
+item: ('civic-center', 'Tuesday', '16:00:00') , 0.002
+item: ('civic-center', 'Monday', '08:00:00') , 0.003
+item: ('civic-center', 'Friday','16:00:00') , 0.004
 
 Property Crimes
 -s 0.002 | 40000
 ------------------------ ITEMS:
-item: ('Wednesday', '16:00:00', 'stapleton') , 0.002
-item: ('Saturday', '16:00:00', 'stapleton') , 0.002
-item: ('Friday', 'five-points', '20:00:00') , 0.002
+item: ('stapleton', 'Wednesday', '16:00:00') , 0.002
+item: ('stapleton', 'Saturday', '16:00:00') , 0.002
+item: ('five-points', 'Friday', '20:00:00') , 0.002
 item: ('stapleton', 'Monday', '20:00:00') , 0.002
-item: ('20:00:00', 'Saturday', 'stapleton') , 0.002
-item: ('20:00:00', 'Thursday', 'stapleton') , 0.002
-item: ('20:00:00', 'Wednesday', 'stapleton') , 0.003
-item: ('20:00:00', 'Friday', 'stapleton') , 0.003
+item: ('stapleton', 'Saturday', '20:00:00',) , 0.002
+item: ('stapleton', 'Thursday', '20:00:00') , 0.002
+item: ('stapleton', 'Wednesday', '20:00:00') , 0.003
+item: ('stapleton', 'Friday', '20:00:00') , 0.003
 
 
 
 Public Disorder
 -s 0.002 | 30,000
 ------------------------ ITEMS:
-item: ('east-colfax', '23:59:00', 'Tuesday') , 0.002
-item: ('20:00:00', 'five-points', 'Friday') , 0.002
-item: ('04:00:00', 'Sunday', 'five-points') , 0.002
+item: ('east-colfax',  'Tuesday', '23:59:00',) , 0.002
+item: ('five-points', 'Friday', '20:00:00') , 0.002
+item: ( 'five-points', 'Sunday', '04:00:00') , 0.002
 
 
 
@@ -76,26 +75,25 @@ item: ('five-points','Friday', '23:59:00') , 0.003
 item: ('union-station','Saturday', '04:00:00') , 0.004
 
 
-
 White Collar Crime
 -s 0.0025 | 6000
 ------------------------ ITEMS:
-item: ('Thursday', 'dia', '12:00:00') , 0.003
-item: ('Wednesday', '16:00:00', 'cherry-creek') , 0.003
-item: ('20:00:00', 'dia', 'Saturday') , 0.003
+item: ('dia', 'Thursday', '12:00:00') , 0.003
+item: ( 'cherry-creek', 'Wednesday', '16:00:00') , 0.003
+item: ('dia', 'Saturday', '20:00:00') , 0.003
 item: ('cbd', 'Thursday', '16:00:00') , 0.003
-item: ('Wednesday', 'dia', '12:00:00') , 0.003
-item: ('montbello', '12:00:00', 'Friday') , 0.003
-item: ('20:00:00', 'Thursday', 'dia') , 0.003
+item: ('dia', 'Wednesday', '12:00:00') , 0.003
+item: ('montbello', 'Friday', '12:00:00') , 0.003
+item: ('dia', 'Thursday', '20:00:00') , 0.003
 
 
 All 
 (-s 0.0017 | 20,000)
 ------------------------ ITEMS:
-item: ('five-points', '20:00:00', 'Thursday') , 0.002
-item: ('five-points', '20:00:00', 'Saturday') , 0.002
-item: ('five-points', '23:59:00', 'Friday') , 0.002
-item: ('five-points', '20:00:00', 'Monday') , 0.002
-item: ('Sunday', '04:00:00', 'union-station') , 0.002
-item: ('five-points', '20:00:00', 'Friday') , 0.002
+item: ('five-points', 'Thursday', '20:00:00') , 0.002
+item: ('five-points', 'Saturday', '20:00:00') , 0.002
+item: ('five-points',  'Friday', '23:59:00') , 0.002
+item: ('five-points', 'Monday', '20:00:00') , 0.002
+item: ('union-station', 'Sunday', '04:00:00') , 0.002
+item: ('five-points', 'Friday', '20:00:00') , 0.002
 
