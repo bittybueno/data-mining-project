@@ -130,7 +130,7 @@
       </column>
       <column caption='Time' datatype='datetime' name='[TIME]' role='dimension' type='ordinal' />
       <column caption='Day Of Week' datatype='string' name='[day_of_week]' role='dimension' type='nominal' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.482173' measure-ordering='alphabetic' measure-percentage='0.517827' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.478355' measure-ordering='alphabetic' measure-percentage='0.521645' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -984,7 +984,7 @@
       </column>
       <column caption='Time' datatype='datetime' name='[TIME]' role='dimension' type='ordinal' />
       <column caption='Day Of Week' datatype='string' name='[day_of_week]' role='dimension' type='nominal' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.483871' measure-ordering='alphabetic' measure-percentage='0.516129' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.478355' measure-ordering='alphabetic' measure-percentage='0.521645' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -1107,6 +1107,128 @@
       <column caption='Time' datatype='datetime' name='[TIME]' role='dimension' type='ordinal' />
       <column caption='Day Of Week' datatype='string' name='[day_of_week]' role='dimension' type='nominal' />
       <layout dim-ordering='alphabetic' dim-percentage='0.478261' measure-ordering='alphabetic' measure-percentage='0.521739' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='All_Crimes_Plot (2)' inline='true' name='federated.0h55x3d175khba13l01x90emu7d4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='All_Crimes_Plot' name='textscan.1mmdtyf0q80syy17xrf2a18qir17'>
+            <connection class='textscan' directory='/Users/missybueno/data-mining-crime' filename='All_Crimes_Plot.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1mmdtyf0q80syy17xrf2a18qir17' name='All_Crimes_Plot.csv' table='[All_Crimes_Plot#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='day_of_week' ordinal='1' />
+            <column datatype='string' name='NEIGHBORHOOD_ID' ordinal='2' />
+            <column datatype='datetime' name='TIME' ordinal='3' />
+            <column datatype='real' name='GEO_LAT' ordinal='4' />
+            <column datatype='real' name='GEO_LON' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[All_Crimes_Plot.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[All_Crimes_Plot.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[day_of_week]</local-name>
+            <parent-name>[All_Crimes_Plot.csv]</parent-name>
+            <remote-alias>day_of_week</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NEIGHBORHOOD_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NEIGHBORHOOD_ID]</local-name>
+            <parent-name>[All_Crimes_Plot.csv]</parent-name>
+            <remote-alias>NEIGHBORHOOD_ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TIME</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[TIME]</local-name>
+            <parent-name>[All_Crimes_Plot.csv]</parent-name>
+            <remote-alias>TIME</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEO_LAT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GEO_LAT]</local-name>
+            <parent-name>[All_Crimes_Plot.csv]</parent-name>
+            <remote-alias>GEO_LAT</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEO_LON</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GEO_LON]</local-name>
+            <parent-name>[All_Crimes_Plot.csv]</parent-name>
+            <remote-alias>GEO_LON</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Avg' caption='Geo Lat' datatype='real' name='[GEO_LAT]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Geo Lon' datatype='real' name='[GEO_LON]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Neighborhood Id' datatype='string' name='[NEIGHBORHOOD_ID]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Time' datatype='datetime' name='[TIME]' role='dimension' type='ordinal' />
+      <column caption='Day Of Week' datatype='string' name='[day_of_week]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.480519' measure-ordering='alphabetic' measure-percentage='0.519481' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -1547,6 +1669,40 @@
       </table>
       <simple-id uuid='{1ECCCE84-1E44-4524-A297-589280D6F4F8}' />
     </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='All_Crimes_Plot (2)' name='federated.0h55x3d175khba13l01x90emu7d4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h55x3d175khba13l01x90emu7d4'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Time' datatype='datetime' name='[TIME]' role='dimension' type='ordinal' />
+            <column-instance column='[TIME]' derivation='Hour' name='[hr:TIME:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0h55x3d175khba13l01x90emu7d4].[hr:TIME:ok]' />
+              <lod column='[federated.0h55x3d175khba13l01x90emu7d4].[sum:Number of Records:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4FB53A9D-6AD1-42E0-8729-882DF948D5EF}' />
+    </worksheet>
     <worksheet name='Violent'>
       <table>
         <view>
@@ -1720,7 +1876,7 @@
       <simple-id uuid='{FF2D8DAE-0B2A-477D-AB1A-70AD4B2BEC9F}' />
     </worksheet>
   </worksheets>
-  <windows source-height='198'>
+  <windows source-height='219'>
     <window class='worksheet' name='Violent'>
       <cards>
         <edge name='left'>
@@ -1859,7 +2015,7 @@
       </cards>
       <simple-id uuid='{D60D099C-23F4-46CB-A4FA-819303A27945}' />
     </window>
-    <window class='worksheet' maximized='true' name='Other'>
+    <window class='worksheet' name='Other'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1881,6 +2037,29 @@
         </edge>
       </cards>
       <simple-id uuid='{0DD903E4-8850-44DC-8167-DAB4415E4CF6}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{92307C26-29CE-4235-B8EC-DD1659E6E37E}' />
     </window>
   </windows>
 </workbook>

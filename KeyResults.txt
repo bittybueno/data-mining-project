@@ -10,7 +10,7 @@ item: ('capitol-hill', 'Thursday', '20:00:00') , 0.006
 item: ('cheesman-park',  'Monday', '20:00:00') , 0.006
 item: ('five-points',  'Monday', '20:00:00' ) , 0.006
 item: ('capitol-hill', 'Wednesday', '20:00:00') , 0.006
-item: ( 'five-points', 'Friday', '20:00:00') , 0.007
+item: ('five-points', 'Friday', '20:00:00') , 0.007
 item: ('five-points', 'Thursday', '20:00:00') , 0.009
 item: ('five-points', 'Tuesday', '20:00:00') , 0.009
 item: ('five-points', 'Wednesday', '20:00:00') , 0.010
