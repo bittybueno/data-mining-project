@@ -97,3 +97,114 @@ item: ('five-points', 'Monday', '20:00:00') , 0.002
 item: ('union-station', 'Sunday', '04:00:00') , 0.002
 item: ('five-points', 'Friday', '20:00:00') , 0.002
 
+
+
+Sunday 
+(-s 0.003 | 50,000)
+------------------------ ITEMS:
+item: ('union-station', 'all-other-crimes', '04:00:00') , 0.003
+item: ('stapleton', 'larceny', '16:00:00') , 0.004
+item: ('westwood', 'all-other-crimes', '04:00:00') , 0.004
+item: ('stapleton', 'larceny', '20:00:00') , 0.004
+item: ('westwood', 'all-other-crimes', '23:59:00') , 0.004
+
+
+Monday 
+(-s 0.003 | 50,000)
+------------------------ ITEMS:
+item: ('five-points', 'all-other-crimes', '20:00:00') , 0.003
+item: ('cbd', 'larceny', '16:00:00') , 0.003
+item: ('cheesman-park', 'drug-alcohol', '20:00:00') , 0.003
+item: ('east-colfax', 'all-other-crimes', '16:00:00') , 0.004
+item: ('civic-center', 'all-other-crimes', '08:00:00') , 0.004
+item: ('civic-center', 'all-other-crimes', '16:00:00') , 0.004
+item: ('five-points', 'drug-alcohol', '20:00:00') , 0.004
+item: ('stapleton', 'larceny', '16:00:00') , 0.004
+item: ('stapleton', 'larceny', '20:00:00') , 0.004
+
+
+Tuesday 
+(-s 0.003 | 50,000)
+------------------------ ITEMS:
+item: ('cheesman-park', 'drug-alcohol', '20:00:00') , 0.003
+item: ('civic-center', 'all-other-crimes', '08:00:00') , 0.003
+item: ('east-colfax', 'all-other-crimes', '16:00:00') , 0.003
+item: ('montbello', 'all-other-crimes', '20:00:00') , 0.003
+item: ('cbd', 'larceny', '16:00:00') , 0.004
+item: ('five-points', 'drug-alcohol', '16:00:00') , 0.004
+item: ('montbello', 'all-other-crimes', '16:00:00') , 0.004
+item: ('stapleton', 'larceny', '16:00:00') , 0.004
+item: ('stapleton', 'larceny', '20:00:00') , 0.004
+item: ('civic-center', 'all-other-crimes', '16:00:00') , 0.004
+item: ('five-points', 'drug-alcohol', '20:00:00') , 0.006
+
+
+Wednesday 
+(-s 0.003 | 50,000)
+------------------------ ITEMS:
+item: ('five-points', 'all-other-crimes', '20:00:00') , 0.003
+item: ('cbd', 'larceny', '20:00:00') , 0.003
+item: ('east-colfax', 'all-other-crimes', '20:00:00') , 0.003
+item: ('cheesman-park', 'drug-alcohol', '20:00:00') , 0.003
+item: ('five-points', 'drug-alcohol', '16:00:00') , 0.003
+item: ('cbd', 'larceny', '16:00:00') , 0.004
+item: ('capitol-hill', 'drug-alcohol', '16:00:00') , 0.004
+item: ('capitol-hill', 'drug-alcohol', '20:00:00') , 0.004
+item: ('civic-center', 'all-other-crimes', '16:00:00') , 0.004
+item: ('montbello', 'all-other-crimes', '16:00:00') , 0.004
+item: ('stapleton', 'larceny', '16:00:00') , 0.004
+item: ('stapleton', 'larceny', '20:00:00') , 0.004
+item: ('civic-center', 'all-other-crimes', '23:59:00') , 0.004
+item: ('five-points', 'drug-alcohol', '20:00:00') , 0.006
+
+
+Thursday 
+(-s 0.003 | 50,000)
+------------------------ ITEMS:
+item: ('capitol-hill', 'drug-alcohol', '16:00:00') , 0.003
+item: ('cbd', 'larceny', '20:00:00') , 0.003
+item: ('five-points', 'drug-alcohol', '16:00:00') , 0.003
+item: ('montbello', 'all-other-crimes', '20:00:00') , 0.003
+item: ('civic-center', 'all-other-crimes', '16:00:00') , 0.003
+item: ('montbello', 'all-other-crimes', '16:00:00') , 0.003
+item: ('civic-center', 'all-other-crimes', '23:59:00') , 0.003
+item: ('capitol-hill', 'drug-alcohol', '20:00:00') , 0.004
+item: ('cbd', 'all-other-crimes', '20:00:00') , 0.004
+item: ('westwood', 'all-other-crimes', '23:59:00') , 0.004
+item: ('cbd', 'larceny', '16:00:00') , 0.004
+item: ('stapleton', 'larceny', '16:00:00') , 0.004
+item: ('stapleton', 'larceny', '20:00:00') , 0.005
+item: ('five-points', 'drug-alcohol', '20:00:00') , 0.006
+
+
+Friday 
+(-s 0.003 | 50,000)
+------------------------ ITEMS:
+item: ('montbello', 'all-other-crimes', '23:59:00') , 0.003
+item: ('five-points', 'drug-alcohol', '23:59:00') , 0.003
+item: ('five-points', 'all-other-crimes', '20:00:00') , 0.003
+item: ('montbello', 'all-other-crimes', '16:00:00') , 0.003
+item: ('five-points', 'all-other-crimes', '23:59:00') , 0.003
+item: ('cbd', 'larceny', '16:00:00') , 0.003
+item: ('westwood', 'all-other-crimes', '23:59:00') , 0.004
+item: ('five-points', 'drug-alcohol', '20:00:00') , 0.004
+item: ('stapleton', 'larceny', '16:00:00') , 0.004
+item: ('stapleton', 'larceny', '20:00:00') , 0.004
+item: ('civic-center', 'all-other-crimes', '16:00:00') , 0.006
+
+
+Saturday 
+(-s 0.003 | 50,000)
+------------------------ ITEMS:
+item: ('union-station', 'all-other-crimes', '04:00:00') , 0.003
+item: ('five-points', 'all-other-crimes', '04:00:00') , 0.003
+item: ('five-points', 'drug-alcohol', '20:00:00') , 0.003
+item: ('cbd', 'larceny', '20:00:00') , 0.003
+item: ('cbd', 'all-other-crimes', '20:00:00') , 0.003
+item: ('five-points', 'all-other-crimes', '20:00:00') , 0.004
+item: ('westwood', 'all-other-crimes', '04:00:00') , 0.004
+item: ('five-points', 'all-other-crimes', '23:59:00') , 0.004
+item: ('montbello', 'all-other-crimes', '23:59:00') , 0.004
+item: ('westwood', 'all-other-crimes', '23:59:00') , 0.004
+item: ('stapleton', 'larceny', '16:00:00') , 0.004
+item: ('stapleton', 'larceny', '20:00:00') , 0.005
