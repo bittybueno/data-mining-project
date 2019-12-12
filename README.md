@@ -14,3 +14,7 @@ years plus the current year to date. The data is based on the National Incident 
 (NIBRS) which includes all victims of person crimes and all crimes within an incident. 
 
 [Denver Crime](https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-crime)
+
+## How to run?
+To run the  notebooks, download the csv from the link above. Rename the csv to 'crime.csv' and make sure the filepaths are correct. 
+
